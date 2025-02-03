@@ -70,6 +70,7 @@ export default async function Page(props: {
             DocsCategory: () => <DocsCategory page={page} from={source} />,
           }}
         />
+        <div className="fixed top-0 z-[-2] h-screen inset-x-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,var(--color-fd-primary),rgba(255,255,255,0))] hidden dark:block opacity-10" />
         {/* {page.data.index ? <DocsCategory page={page} from={source} /> : null} */}
       </DocsBody>
     </DocsPage>
