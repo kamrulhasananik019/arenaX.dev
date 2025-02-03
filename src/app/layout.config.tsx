@@ -21,11 +21,5 @@ export const baseOptions: BaseLayoutProps = {
     ),
     transparentMode: "top",
   },
-  links: [
-    {
-      text: "Course",
-      url: "/course",
-      active: "nested-url",
-    },
-  ],
+  links: [],
 };

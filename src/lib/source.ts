@@ -2,7 +2,7 @@ import { createMDXSource } from "fumadocs-mdx";
 import { loader } from "fumadocs-core/source";
 import { createElement } from "react";
 
-import { docs, meta } from "~/.source";
+import { docs, meta } from "~/../.source";
 import { icons } from "~/components/icons";
 
 export const source = loader({
