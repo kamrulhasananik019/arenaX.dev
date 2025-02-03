@@ -1,0 +1,14 @@
+{
+  "title": "HTML",
+  "description": "The official html course",
+  "icon": "Html",
+  "root": true,
+  "pages": [
+    "index",
+    "setup",
+    "---Basics---",
+    "basics-of-html",
+    "html-elements",
+    "html-attributes"
+  ]
+}

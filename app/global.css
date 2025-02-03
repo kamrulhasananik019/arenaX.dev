@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import "fumadocs-ui/css/neutral.css";
+@import "fumadocs-ui/css/preset.css";
+
+@source "../node_modules/fumadocs-ui/dist/**/*.js";
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@layer base {
+  button {
+    cursor: pointer;
+  }
+}
+
+.general {
+  --color-fd-primary: var(--general-color);
+}
+
+.html {
+  --color-fd-primary: var(--html-color);
+}
+
+:root {
+  --general-color: hsl(0, 0%, 9%);
+  --html-color: hsl(11, 64%, 50%);
+}
+
+body {
+  overscroll-behavior-y: none;
+  background-color: var(--color-fd-background);
+}
+
+.dark {
+  --general-color: hsl(0 0% 100%);
+  --html-color: hsl(11, 64%, 60%);
+}

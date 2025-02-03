@@ -1,0 +1,103 @@
+---
+title: HTML Attributes
+description: HTML attributes provide additional information about HTML elements.
+---
+
+## What are HTML Attributes?
+
+Imagine HTML elements as building blocks, and attributes as their unique characteristics. Just like a house can have different colors, sizes, and windows, HTML elements can have various attributes that modify their appearance, behavior, and functionality.
+
+**In simpler terms:**
+
+- **HTML elements** are the basic building blocks of a webpage (like `<p>`, `<img>`, `<a>`).
+- **Attributes** are extra pieces of information you add to an element to give it specific instructions.
+
+## How to Use Attributes
+
+Attributes are written inside the opening tag of an element, enclosed within double quotes (").
+
+**Example:**
+
+```html
+<img src="image.jpg" alt="A beautiful image"> 
+```
+
+In this example:
+
+- `<img>` is the element (for images).
+- `src="image.jpg"` is the attribute that specifies the source of the image.
+- `alt="A beautiful image"` is the attribute that provides an alternative text description for the image (useful for screen readers).
+
+## Common HTML Attributes
+
+Here are some of the most commonly used HTML attributes with sample use cases:
+
+- **`src`:** Specifies the URL of a resource (like an image or video).
+  Serves as the source of the image or video.
+  ```html
+  <!-- Image -->
+  <img src="myimage.png" alt="My Image">
+  <!-- Video -->
+  <video src="myvideo.mp4" controls>My Video</video>
+  ```
+
+- **`href`:** Specifies the URL of a page to link to.
+  Serves as the URL of the page to link to.
+  ```html
+  <a href="https://www.example.com">Visit Example Website</a>
+  ```
+
+
+- **`alt`:** Provides alternative text for images and other media.
+  Serves as the alternative text for the image or other media.
+  ```html
+  <img src="myimage.png" alt="A beautiful landscape photo">
+  ```
+
+- **`title`:** Provides a tooltip for the element.
+  Serves as the tooltip for the element.
+  ```html
+  <a href="https://www.example.com" title="Learn more about Example">Visit Example</a>
+  ```
+
+- **`style`:** Allows you to directly style the element using CSS.
+  Serves as the CSS for the element.
+  ```html
+  <p style="color: blue; font-size: 18px;">This is a styled paragraph.</p>
+  ```
+
+- **`class`:** Assigns a class name to the element, allowing you to style it using CSS.
+  Serves as the class for the element.
+  ```html
+  <p class="my-paragraph">This paragraph has the "my-paragraph" class.</p>
+  ```
+
+- **`id`:** Assigns a unique ID to the element, allowing you to style it or target it with JavaScript.
+  Serves as the ID for the element.
+  ```html
+  <div id="main-content">Main Content</div>
+  ```
+
+- **`target`:** Specifies where to open a linked document (e.g., "\_blank" to open in a new tab).
+  Serves as the target for the element.
+  ```html
+  <a href="https://www.example.com" target="_blank">Open in New Tab</a>
+  ```
+
+**Example with Multiple Attributes:**
+
+```html
+<a href="https://www.example.com" target="_blank" title="Visit Example Website">Click here</a>
+```
+
+This creates a link to "[https://www.example.com](https://www.google.com/url?sa=E&source=gmail&q=https://www.example.com)" that opens in a new tab when clicked, and displays the tooltip "Visit Example Website" on hover.
+
+## Key Points to Remember
+
+- Attribute names are case-insensitive (e.g., `src` and `SRC` are the same).
+- Attribute values must be enclosed in double quotes.
+- Some attributes have predefined values (e.g., `target="_blank"`).
+
+## Conclusion
+
+HTML attributes are essential for creating dynamic and interactive web pages. By understanding and using them effectively, you can control the appearance, behavior, and functionality of your HTML elements with greater precision.
