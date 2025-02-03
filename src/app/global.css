@@ -45,3 +45,7 @@ body {
 
   --color-fd-background: hsl(0 0% 3%);
 }
+
+.dark #nd-sidebar {
+  @apply !bg-transparent backdrop-blur-xl backdrop-saturate-50;
+}
