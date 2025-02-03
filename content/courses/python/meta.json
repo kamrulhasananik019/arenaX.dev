@@ -1,0 +1,7 @@
+{
+  "title": "Python",
+  "description": "Python course",
+  "icon": "Python",
+  "root": true,
+  "pages": ["---Guide---", "index", "history"]
+}

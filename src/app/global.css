@@ -23,9 +23,14 @@
   --color-fd-primary: var(--html-color);
 }
 
+.python {
+  --color-fd-primary: var(--python-color);
+}
+
 :root {
   --general-color: hsl(0, 0%, 9%);
-  --html-color: hsl(11, 64%, 50%);
+  --html-color: hsl(0 73.7% 41.8%);
+  --python-color: hsl(32.1 94.6% 43.7%);
 }
 
 body {
@@ -35,5 +40,6 @@ body {
 
 .dark {
   --general-color: hsl(0 0% 100%);
-  --html-color: hsl(11, 64%, 60%);
+  --html-color: hsl(0 84.2% 60.2%);
+  --python-color: hsl(43.3 96.4% 56.3%);
 }
