@@ -3,5 +3,5 @@
   "description": "Python course",
   "icon": "Python",
   "root": true,
-  "pages": ["---Guide---", "index", "history"]
+  "pages": ["---Guide---", "index", "history", "setup"]
 }

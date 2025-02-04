@@ -1,1 +1,2 @@
+- build custom callout and add `tip` variant
 - ~~build custom toc~~
