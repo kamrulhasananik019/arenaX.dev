@@ -6,14 +6,14 @@ export function createMetadata(override: Metadata): Metadata {
     openGraph: {
       title: override.title ?? undefined,
       description: override.description ?? undefined,
-      url: "https://fumadocs.vercel.app",
+      url: "https://xarena.vercel.app",
       images: "/banner.png",
-      siteName: "Fumadocs",
+      siteName: "ArenaXdev",
       ...override.openGraph,
     },
     twitter: {
       card: "summary_large_image",
-      creator: "@money_is_shark",
+      creator: "@ahm0xc",
       title: override.title ?? undefined,
       description: override.description ?? undefined,
       images: "/banner.png",

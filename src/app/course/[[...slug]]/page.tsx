@@ -16,6 +16,7 @@ import { TypeTable } from "fumadocs-ui/components/type-table";
 import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
 import { File, Folder, Files } from "fumadocs-ui/components/files";
 import { Mermaid } from "@theguild/remark-mermaid/mermaid";
+import type { Metadata } from "next";
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -83,7 +84,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata(props: {
   params: Promise<{ slug?: string[] }>;
-}) {
+}): Promise<Metadata> {
   const params = await props.params;
   const page = source.getPage(params.slug);
   if (!page) notFound();
@@ -91,5 +92,14 @@ export async function generateMetadata(props: {
   return {
     title: page.data.title,
     description: page.data.description,
+    openGraph: {
+      images: [
+        {
+          url: `/og?title=${page.data.title}&description=${page.data.description}&brand=${page.file.dirname}`,
+          width: 1200,
+          height: 630,
+        },
+      ],
+    },
   };
 }
