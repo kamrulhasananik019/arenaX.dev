@@ -97,7 +97,7 @@ export async function generateMetadata(props: {
     openGraph: {
       images: [
         {
-          url: `${baseUrl}/og?title=${page.data.title}&description=${page.data.description}&brand=${page.file.dirname}`,
+          url: `${baseUrl}og?title=${page.data.title}&description=${page.data.description}&brand=${page.file.dirname}`,
           width: 1200,
           height: 630,
         },
