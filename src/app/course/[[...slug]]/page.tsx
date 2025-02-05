@@ -18,6 +18,8 @@ import { File, Folder, Files } from "fumadocs-ui/components/files";
 import { Mermaid } from "@theguild/remark-mermaid/mermaid";
 import type { Metadata } from "next";
 
+import { baseUrl } from "~/lib/utils";
+
 export const dynamicParams = false;
 export const revalidate = false;
 
@@ -95,7 +97,7 @@ export async function generateMetadata(props: {
     openGraph: {
       images: [
         {
-          url: `/og?title=${page.data.title}&description=${page.data.description}&brand=${page.file.dirname}`,
+          url: `${baseUrl}/og?title=${page.data.title}&description=${page.data.description}&brand=${page.file.dirname}`,
           width: 1200,
           height: 630,
         },

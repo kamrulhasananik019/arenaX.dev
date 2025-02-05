@@ -3,8 +3,6 @@ import { NextRequest } from "next/server";
 import * as fs from "node:fs";
 import path from "node:path";
 
-import { baseUrl } from "~/lib/metadata";
-
 const font = fs.readFileSync(
   path.join(process.cwd(), "public", "fonts", "Geist-Regular.ttf")
 );
@@ -112,8 +110,12 @@ export async function GET(req: NextRequest) {
   const ownerImageBuffer = fs.readFileSync(
     path.join(process.cwd(), "public", "images", "ahm0xc.png")
   );
+  const bgImageBuffer = fs.readFileSync(
+    path.join(process.cwd(), "public", "images", "og", "bg.png")
+  );
 
   const ownerImage = ownerImageBuffer.toString("base64");
+  const bgImage = bgImageBuffer.toString("base64");
 
   if (brand) {
     const brandImageBuffer = fs.readFileSync(brand.imagePath);
@@ -123,9 +125,9 @@ export async function GET(req: NextRequest) {
   return new ImageResponse(
     (
       <div
-        tw="w-full h-full flex [&_p]:my-0 bg-yellow-500"
+        tw="w-full h-full flex [&_p]:my-0"
         style={{
-          backgroundImage: `url(${baseUrl}/images/og/bg.png)`,
+          backgroundImage: `url(data:image/png;base64,${bgImage})`,
         }}
       >
         {/* <div

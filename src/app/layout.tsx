@@ -5,7 +5,8 @@ import { GeistMono } from "geist/font/mono";
 import { RootProvider } from "fumadocs-ui/provider";
 
 import { Body } from "./layout.client";
-import { baseUrl, createMetadata } from "~/lib/metadata";
+import { createMetadata } from "~/lib/metadata";
+import { baseUrl } from "~/lib/utils";
 
 import "./global.css";
 import "katex/dist/katex.min.css";
