@@ -30,6 +30,8 @@ const docsOptions: DocsLayoutProps = {
         };
       },
     },
+    // TODO: add user banner
+    // banner: <div className="flex items-center justify-between">hello</div>,
   },
 };
 

@@ -22,7 +22,7 @@ export const metadata = createMetadata({
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: "#0A0A0A" },
+    { media: "(prefers-color-scheme: dark)", color: "#090909" },
     { media: "(prefers-color-scheme: light)", color: "#fff" },
   ],
 };
@@ -34,6 +34,22 @@ export default function Layout({ children }: { children: ReactNode }) {
       className={`${GeistSans.variable} ${GeistMono.variable}`}
       suppressHydrationWarning
     >
+      <head>
+        <link rel="icon" href="/icons/favicon.ico" type="image/x-icon" />
+        <link
+          rel="icon"
+          href="/icons/favicon-dark.ico"
+          type="image/x-icon"
+          media="(prefers-color-scheme: light)"
+        />
+        <link
+          rel="icon"
+          href="/icons/favicon-light.ico"
+          type="image/x-icon"
+          media="(prefers-color-scheme: dark)"
+        />
+      </head>
+
       <Body>
         <RootProvider>{children}</RootProvider>
       </Body>
