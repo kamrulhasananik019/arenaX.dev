@@ -3,6 +3,7 @@ import { Viewport } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { RootProvider } from "fumadocs-ui/provider";
+import { ClerkProvider } from "@clerk/nextjs";
 
 import { Body } from "./layout.client";
 import { createMetadata } from "~/lib/metadata";
@@ -29,6 +30,7 @@ export const viewport: Viewport = {
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
+    <ClerkProvider>
     <html
       lang="en"
       className={`${GeistSans.variable} ${GeistMono.variable}`}
@@ -54,5 +56,6 @@ export default function Layout({ children }: { children: ReactNode }) {
         <RootProvider>{children}</RootProvider>
       </Body>
     </html>
+    </ClerkProvider>
   );
 }

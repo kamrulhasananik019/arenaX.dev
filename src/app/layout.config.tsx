@@ -1,3 +1,4 @@
+import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
 import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared";
 
 /**
@@ -11,13 +12,24 @@ import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared";
 export const baseOptions: BaseLayoutProps = {
   nav: {
     title: (
-      <>
-        <span className="font-medium [header_&]:text-[15px]">
+      <div>
+       <div>
+       <span className="font-medium [header_&]:text-[15px]">
           Arena
           <span className="text-[var(--color-fd-primary)] text-base">X</span>
           .dev
         </span>
-      </>
+        <div>
+       </div>
+        <SignedOut>
+              <SignInButton />
+              <SignUpButton />
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+        </div>
+      </div>
     ),
     transparentMode: "top",
   },
