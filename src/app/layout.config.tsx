@@ -12,15 +12,15 @@ import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared";
 export const baseOptions: BaseLayoutProps = {
   nav: {
     title: (
-      <div>
+      <div className="flex items-center gap-2">
        <div>
        <span className="font-medium [header_&]:text-[15px]">
           Arena
           <span className="text-[var(--color-fd-primary)] text-base">X</span>
           .dev
-        </span>
+        </span>   
+        </div>
         <div>
-       </div>
         <SignedOut>
               <SignInButton />
               <SignUpButton />
