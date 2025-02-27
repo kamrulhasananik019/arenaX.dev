@@ -4,6 +4,8 @@ import "katex/dist/katex.min.css";
 
 import { baseOptions } from "~/app/layout.config";
 import { source } from "~/lib/source";
+import Banner from "~/components/(auth)/banner/banner";
+
 
 const docsOptions: DocsLayoutProps = {
   ...baseOptions,
@@ -30,8 +32,9 @@ const docsOptions: DocsLayoutProps = {
         };
       },
     },
+
     // TODO: add user banner
-    // banner: <div className="flex items-center justify-between">hello</div>,
+    banner: <Banner/>,
   },
 };
 

@@ -15,6 +15,9 @@ const config = {
     ignoreDuringBuilds: true,
   },
   serverExternalPackages: ["oxc-transform"],
+  images: {
+    domains: ["img.clerk.com"],
+  },
 };
 
 export default withMDX(config);

@@ -1,4 +1,4 @@
-import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
+
 import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared";
 
 /**
@@ -21,13 +21,7 @@ export const baseOptions: BaseLayoutProps = {
         </span>   
         </div>
         <div>
-        <SignedOut>
-              <SignInButton />
-              <SignUpButton />
-            </SignedOut>
-            <SignedIn>
-              <UserButton />
-            </SignedIn>
+     
         </div>
       </div>
     ),
